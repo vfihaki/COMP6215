@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="onelovebar.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:onelovebar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Opacity="0.5">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/flashinglight.gif"/>
+        </Grid.Background>
+        <Grid.FocusVisualPrimaryBrush>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FFCB6565" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.FocusVisualPrimaryBrush>
+        <Button x:Name="spinbtn" Content="SPIN" Margin="0,694,0,0" VerticalAlignment="Top" Height="177" Width="412" FontSize="75" HorizontalAlignment="Center" Foreground="White">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="picbox1" HorizontalAlignment="Left" Height="271" Margin="242,276,0,0" VerticalAlignment="Top" Width="271" FocusVisualSecondaryBrush="{x:Null}" FocusVisualPrimaryBrush="{x:Null}"/>
+        <Image x:Name="picbox2" HorizontalAlignment="Center" Height="271" Margin="0,276,0,0" VerticalAlignment="Top" Width="271"/>
+        <Image x:Name="picbox3" HorizontalAlignment="Left" Height="271" Margin="1044,276,0,0" VerticalAlignment="Top" Width="271"/>
+
+    </Grid>
+</Page>
